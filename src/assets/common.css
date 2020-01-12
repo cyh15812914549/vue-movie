@@ -1,0 +1,29 @@
+.text-c{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left
+}
+
+.vue-flex{
+    display: flex;
+}
+
+.vue-flex-item{
+    flex: 1;
+}
+
+.xy-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-bottom{
+    margin-bottom: 60px;
+}
+
+.margin-top10{
+    margin-top: 10px
+}
