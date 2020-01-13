@@ -18,12 +18,18 @@
                 </li>
             </ul>
         </div>
+		
+		<Loading></Loading>
     </div>
 </template>
 
 <script>
+	import Loading from "../components/loading/Loading.vue";
     export default {
-        name: "Cinema"
+        name: "Cinema",
+		components:{
+			Loading
+		}
     }
 </script>
 

@@ -3,9 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import http from './server'
+
 import Vant from 'vant';
 import 'vant/lib/index.css';
-Vue.use(Vant);
+Vue.use(Vant).use(http);
 
 Vue.config.productionTip = false;
 
