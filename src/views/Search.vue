@@ -6,8 +6,9 @@
 </template>
 
 <script>
-import api from "../server/api.js";
+
 export default {
+	
   name: "Search",
   data() {
     return {
@@ -20,9 +21,7 @@ export default {
     }
   },
   created() {
-    api.list().then(res => {
-      console.log(res)
-    });
+	
   }
 };
 </script>
