@@ -1,8 +1,6 @@
 <template>
     <div>
-        <div class="text-c title">
-            <span>影院</span>
-        </div>
+        <Header title="影院"></Header>
         <div class="cinema_body text-left">
             <ul>
                 <li v-for="item in 5" :key="item">
@@ -14,22 +12,43 @@
                         <span>测试地址</span>
                         <span>测测公里</span>
                     </div>
-
                 </li>
             </ul>
         </div>
 		
-		<Loading></Loading>
     </div>
 </template>
 
 <script>
-	import Loading from "../components/loading/Loading.vue";
+    
+    import Header from "../components/header/index"
     export default {
         name: "Cinema",
 		components:{
-			Loading
-		}
+			Header
+        },
+        data(){
+            return{
+
+            }
+        },
+        methods:{
+            initData(){
+                api.movieShow
+                    .list()
+                    .then(res => {
+                        console.log(res);
+                        // this.movieShowList = res.data.data;
+                    })
+                    .catch(err=>{
+
+                    })
+                },
+        },
+        created(){
+            this.initData()
+        },
+
     }
 </script>
 

@@ -1,8 +1,6 @@
 <template>
     <div>
-        <div class="text-c title">
-            <span>电影</span>
-        </div>
+        <Header title="电影"></Header>
         <div class="vue-flex">
             <div style="flex: 6">
                 <van-tabs v-model="topTabName">
@@ -29,7 +27,7 @@
     import City from '../components/city'
     import Heat from '../components/heat'
     import Soon from '../components/soon'
-
+    import Header from '../components/header'
     export default {
         data(){
             return{
@@ -39,7 +37,7 @@
         },
         name: "Movie",
         components: {
-            City,Heat,Soon
+            City,Heat,Soon,Header
         },
         methods: {
             goToSearch(){

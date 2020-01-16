@@ -5,6 +5,9 @@ import * as repairComplete from './modules/repairComplete'
 import * as user from './modules/user'
 import * as userAvatar from './modules/userAvatar'
 import * as city from './modules/city'
+import * as movieAdminHome from './modules/movieAdminHome'
+import * as movieShow from './modules/movieShow'
+import * as coming from './modules/comingList'
 
 export default {
     saleRecord,
@@ -13,5 +16,8 @@ export default {
     repairComplete,
     user,
     userAvatar,
-    city
+    city,
+    movieAdminHome,
+    movieShow,
+    coming
 }

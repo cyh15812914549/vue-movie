@@ -27,9 +27,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
         import(/* webpackChunkName: "about" */ "../views/Search.vue")
+  },
+  {
+    path : '/detail1/:movieId',
+    name:'detail1',
+    component : ()=> import('../views/Detail.vue'),
+    props : true
   }
 ];
-
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,

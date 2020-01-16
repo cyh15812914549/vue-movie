@@ -20,6 +20,10 @@ import 'vant/lib/index.css';
 Vue.use(Vant,http,Loading);
 
 
+Vue.filter('setWH',(url,arg)=>{
+  return url.replace(/w\.h/,arg);
+});
+
 Vue.config.productionTip = false;
 
 

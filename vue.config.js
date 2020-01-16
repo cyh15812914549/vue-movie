@@ -12,11 +12,9 @@ module.exports = {
         // 设置代理
         proxy: {
             '/api': {
-
-               
-
                 //target: ' http://119.23.45.213',     //api服务器地址
-                target: 'http://nvhn9v.natappfree.cc',
+                target: 'http://doc.ithollow.cn',
+                //target: 'http://localhost:8080',
 
                 changeOrigin: true,				//虚拟网站需要更管orign
                 ws: true,						//代理websockets
