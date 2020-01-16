@@ -11,7 +11,7 @@
                     <div style="padding: 6px 0"><span>{{item.showInfo}}</span></div>
                 </div>
                 <div slot="footer">
-                    <router-link :to="{ name: 'detail1', params: { movieId: item.id }}">详情</router-link>
+                    <router-link :to="{ name: 'detail', params: { movieId: item.id }}">详情</router-link>
                     <!-- <van-button size="mini" @click="goToDetail(item.id)">详情</van-button> -->
                 </div>
             </van-card>
@@ -45,7 +45,7 @@
             },
             goToDetail(movieId){
                 console.log(movieId);
-               
+
                 this.$router.push('/detail/'+ movieId);
             }
         }

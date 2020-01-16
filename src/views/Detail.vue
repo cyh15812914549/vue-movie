@@ -1,13 +1,13 @@
 <template>
-	<div id="detailContrainer" class="slide-enter-active"> 
-        <div> 
+	<div id="detailContrainer" class="slide-enter-active">
+        <div>
             <van-nav-bar
                 title="影片详情"
                 left-arrow
                @click-left="onClickLeft"
                style="background-color:#096;color:#fff;"
             />
-        </div>  
+        </div>
         <!-- <div v-for="(item,index) in movieShowList" :key="index" class="margin-top10">
             <van-card
                     :thumb="item.img | setWH('128.180')"
@@ -44,7 +44,7 @@
 			<div class="detail_intro">
 				<p>{{detailMovie.movie_detail}}</p>
 			</div>
-			
+
 		</div>  -->
 	</div>
 </template>

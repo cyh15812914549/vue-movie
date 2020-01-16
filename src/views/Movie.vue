@@ -32,7 +32,7 @@
         data(){
             return{
                 topTabName: 'city',
-                bottomTabName: 'movie'
+                bottomTabName: 'movie',
             }
         },
         name: "Movie",
@@ -41,7 +41,7 @@
         },
         methods: {
             goToSearch(){
-                this.$router.push('/search')
+                this.$router.push({name: 'search',params:{id: 3}})
             }
         }
     };

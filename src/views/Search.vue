@@ -6,9 +6,9 @@
 </template>
 
 <script>
-
+  import api from '@/http/api'
 export default {
-	
+
   name: "Search",
   data() {
     return {
@@ -18,10 +18,23 @@ export default {
   methods: {
     onClickLeft() {
       this.$router.back();
-    }
+    },
+    initData(){
+      console.log("zheh"+ this.movieId);
+      console.log(this.$route.params.id);
+      api.movieShow
+              .selectMovieDetailById(this.$route.params.id)
+              .then(res => {
+                console.log(res);
+                this.movieShowList = res.data.data;
+              })
+              .catch(err=>{
+
+              })
+    },
   },
   created() {
-	
+    this.initData()
   }
 };
 </script>
